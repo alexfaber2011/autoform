@@ -1,0 +1,12 @@
+<template name="insertPost">
+    <!--{{> quickForm collection="Posts" id="insertPost" type="insert"}}-->
+    {{#autoForm collection="Posts" id="insertPost" type="insert"}}
+    <fieldset>
+        {{> afQuickField name='firstName' }}
+        {{> afQuickField name='lastName'}}
+        {{> afQuickField name='email'}}
+        {{> afQuickField name='content'}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Insert</button>
+    {{/autoForm}}
+</template>
